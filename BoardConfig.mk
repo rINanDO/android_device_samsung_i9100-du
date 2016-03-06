@@ -40,3 +40,18 @@ DEVICE_RESOLUTION := 480x800
 
 # Use the non-open-source parts, if they're present
 -include vendor/samsung/i9100/BoardConfigVendor.mk
+
+# TWRP
+TW_THEME := portrait_mdpi
+TWRP_NEW_THEME := true
+HAVE_SELINUX := true
+TW_MAX_BRIGHTNESS := 255
+TW_INCLUDE_CRYPTO := true
+TW_HAS_DOWNLOAD_MODE := true
+TW_NO_REBOOT_BOOTLOADER := true
+TW_INTERNAL_STORAGE_PATH := "/emmc"
+TW_INTERNAL_STORAGE_MOUNT_POINT := "emmc"
+TW_EXTERNAL_STORAGE_PATH := "/sdcard"
+TW_EXTERNAL_STORAGE_MOUNT_POINT := "sdcard"
+TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel/brightness"
+TW_CUSTOM_CPU_TEMP_PATH := "/sys/devices/platform/s5p-tmu/temperature"
