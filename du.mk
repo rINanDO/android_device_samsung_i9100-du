@@ -1,4 +1,4 @@
-# Copyright (C) 2013 OmniROM Project
+#
 # Copyright (C) 2012 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,21 +12,26 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
 
-# Inherit from the common Open Source product configuration
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+# Release name
+PRODUCT_RELEASE_NAME := GT-I9100
 
-# Inherit from our du product configuration
-$(call inherit-product, vendor/du/config/common.mk)
+# Bootanimation
+TARGET_SCREEN_HEIGHT := 800
+TARGET_SCREEN_WIDTH := 480
 
-# Pull in GSM-specific stuff such as APNs
-$(call inherit-product, vendor/du/config/gsm.mk)
+# Inherit device configuration
+$(call inherit-product, device/samsung/i9100/full_i9100.mk)
 
-$(call inherit-product, device/samsung/i9100/device.mk)
+# Inherit some common DU stuff.
+$(call inherit-product, vendor/du/config/common_full_phone.mk)
 
-# Discard inherited values and use our own instead.
-PRODUCT_NAME := du_i9100
+# Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := i9100
-PRODUCT_BRAND := samsung
-PRODUCT_MANUFACTURER := Samsung
+PRODUCT_NAME := du_i9100
+PRODUCT_BRAND := Samsung
 PRODUCT_MODEL := GT-I9100
+
+# Set build fingerprint / ID / Prduct Name ect.
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=GT-I9100 TARGET_DEVICE=GT-I9100 BUILD_FINGERPRINT=samsung/GT-I9100/GT-I9100:4.1.2/JZO54K/I9100XWMS2:user/release-keys PRIVATE_BUILD_DESC="GT-I9100-user 4.1.2 JZO54K I9100XWMS2 release-keys"

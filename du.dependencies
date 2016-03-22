@@ -1,32 +1,32 @@
 [
     {
-        "remote": "du",
-        "repository": "android_device_samsung_galaxys2-common",
+        "remote": "github",
+        "repository": "rinando/android_device_samsung_galaxys2-common-du",
         "target_path": "device/samsung/galaxys2-common",
-        "revision": "du44"
+        "revision": "m-caf"
     },
     {
-        "remote": "du",
-        "repository": "android_kernel_samsung_smdk4412",
+        "remote": "github",
+        "repository": "rinando/GeniSys.Kernel-du",
         "target_path": "kernel/samsung/smdk4412",
-        "revision": "du44"
+        "revision": "m-caf"
     },
     {
-        "remote": "du",
-        "repository": "android_hardware_samsung",
+        "remote": "github",
+        "repository": "rinando/android_hardware_samsung-du",
         "target_path": "hardware/samsung",
-        "revision": "du44"
+        "revision": "m-caf"
     },
     {
-        "remote": "du",
-        "repository": "android_packages_apps_SamsungServiceMode",
+        "remote": "github",
+        "repository": "DirtyUnicorns/android_packages_apps_SamsungServiceMode",
         "target_path": "packages/apps/SamsungServiceMode",
-        "revision": "du44"
+        "revision": "m-caf"
     },
     {
-        "remote": "du",
-        "repository": "proprietary_vendor_samsung",
-        "target_path": "vendor/samsung",
-        "revision": "du44"
+        "remote": "github",
+        "repository": "DirtyUnicorns/android_external_stlport",
+        "target_path": "external/stlport",
+        "revision": "m-caf"
     }
 ]
