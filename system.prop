@@ -10,3 +10,6 @@ ro.vold.primary_physical=1
 
 # ART
 dalvik.vm.dex2oat-swap=false
+
+# GSM Signal
+ro.telephony.ril.v3=datacallapn,signalstrength
