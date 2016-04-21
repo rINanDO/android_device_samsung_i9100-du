@@ -13,3 +13,8 @@ dalvik.vm.dex2oat-swap=false
 
 # GSM Signal
 ro.telephony.ril.v3=datacallapn,signalstrength
+
+# OTA Updater
+ro.ota.romname=DirtyUnicorns
+ro.ota.version=xxx
+ro.ota.manifest=https://drive.google.com/uc?export=download&id=0Bx_upRk6Kfw9UWtFSmVUZkpqU2M
